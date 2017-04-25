@@ -3,6 +3,7 @@ import math
 import random
 
 def miller_rabin(n):
+    print("Checking: " + str(n))
     is_prime = False
     for i in range(0, 10):
         m = 1

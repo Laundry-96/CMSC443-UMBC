@@ -1,4 +1,4 @@
-import miller_rabin
+from miller_rabin import miller_rabin
 import random
 random.seed()
 
@@ -9,14 +9,11 @@ def get_prime():
 
 p = get_prime()
 q = get_prime()
-
-found = False
-
-while not found:
-    n = random.getrandbits(512)
-    if n%2 == 0:
-        n+=1
-    found = miller_rabin(n)
-
 phi = (p-1) * (q-1)
-n 
+n = p*q
+b = random.randrange(2, phi-1)
+while gcd(b,z) != 1:
+    b = random.randrange(2,phi-1)
+print(p)
+print(q)
+print(b)
